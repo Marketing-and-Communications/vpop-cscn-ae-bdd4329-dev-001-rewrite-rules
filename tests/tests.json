@@ -8,5 +8,15 @@
     "event_url": "somesite.tamu.edu/directory/",
     "result_location": "/directory/index.html",
     "result_status": "301"
+  },
+  "redirect-test.engr.tamu.edu^/redirect/?(.*)": {
+    "event_url": "redirect-test.engr.tamu.edu/redirect/some/file.html",
+    "result_location": "https://www.tamu.edu/former-students/index.html",
+    "result_status": "301"
+  },
+  "redirect-test2.engr.tamu.edu^/redirect/?(.*)": {
+    "event_url": "redirect-test2.engr.tamu.edu/redirect/some/file.html",
+    "result_location": "https://engineering.tamu.edu/",
+    "result_status": "301"
   }
 }

@@ -52,6 +52,7 @@ class RewriteTester:
         # Base the event input on the template
         event = copy.deepcopy(self._event_template)  # type: Dict
         event['Records'][0]['cf']['request']['headers']['host'][0]['value'] = hostname
+        event['Records'][0]['cf']['request']['headers']['x-forwarded-host'][0]['value'] = hostname
         event['Records'][0]['cf']['request']['uri'] = uri
         event['Records'][0]['cf']['request']['querystring'] = querystring
 
