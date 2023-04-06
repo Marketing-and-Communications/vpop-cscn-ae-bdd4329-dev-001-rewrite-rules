@@ -1,4 +1,7 @@
 [
+    "^/redirect/?(.*) https://www.tamu.edu/former-students/index.html [H=^redirect-test.engr.tamu.edu$,R=301,L]",
+    "^/redirect/?(.*) https://engineering.tamu.edu/ [H=^redirect-test2.engr.tamu.edu$,R=301,L]",
+
     "^//.* /index.html [R,L]",
     "^(.*)/$ $1/index.html [R,L]",
     "^((?:(?![.]|[?]).)*(?<![/]))?[/]?([?].*)$ $1/index.html$2 [R,L]",
